@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Product </title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/sanpham.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    
+</head>
+<body onload="renderproduct()">
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="lab la-accusoft"></span><a href="admin.html">FASHION CTU</a></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="" class="active"><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+                <li><a href="./sanpham.html"><span class="las la-users"></span>
+                    <span>Product</span>
+                    <ul class="sub-nav">
+                        <li><a id="link-add"><span class="las la-plus-square"></span><span>Add</span></a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li><a href=""><span class="las la-clipboard-list"></span>
+                    <span>Projects</span></a>
+                </li>
+                <li><a href=""><span class="las la-shopping-bag"></span>
+                    <span>Orders</span></a>
+                </li>
+                <li><a href=""><span class="las la-receipt"></span>
+                    <span>Inventory</span></a>
+                </li>
+                <li><a href=""><span class="las la-user-circle"></span>
+                    <span>Acoounts</span></a>
+                </li>
+                <li><a href=""><span class="las la-clipboard-list"></span>
+                    <span>Tasks</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    Dashboard
+                </h2>
+                <div class="search-wrapper">
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="Search here" />
+                </div>
+                <div class="user-wrapper">
+                    <img src="image/avatar_admin.jfif" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Thái Anh</h4>
+                        <small>Super admin</small>
+                    </div>
+                </div>
+        </header>
+        <div class="recent-grid">
+            <div class="projects">
+                <div class="card">                                                                
+                    <div class="card-body">
+                        <div class="table-responsive">
+                        <table  id="t1" width="100%">
+                            <thead >
+                                <tr>
+                                    <td>Mã SP</td>
+                                    <td>Tên SP</td>
+                                    <td>Loại </td>
+                                    <td>Số Lượng</td>
+                                    <td>Đơn Giá</td>
+                                    <td>Hình Ảnh</td>  
+                                    <td>Chỉnh Sửa</td>   
+                                </tr>
+                            </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="frm1">
+                <div class="title1">Thêm Sản Phẩm</div>
+                <table id="t2" width="100%">
+                    <tr>
+                        <th>Mã Sản phẩm:</th>
+                        <td><input id="masp" required maxlength="5" type="text" name="masp"
+                            placeholder="5 ký tự"></td>
+                    </tr>
+                    <tr>
+                        <th>Tên Sản phẩm:</th>
+                        <td><input id="tensp" required type="text" name="tensp"
+                            placeholder="không rỗng"></td>
+                    </tr>
+                    <tr>
+                        <th>Loại Sản phẩm:</th>
+                        <td>
+                            <select id="loaisp" required>
+                                <option value="">--chọn--</option>
+                                <option value="Quần">Quần</option>
+                                <option value="Áo">Áo</option>
+                                <option value="Phụ Kiện">Phụ kiện</option>
+                                <option value="Giày">Giày</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Số lượng:</th>
+                        <td><input id="sl" required pattern="\d" type="number" name="sl"
+                            placeholder="là số dương"></td>
+                    </tr>
+                    <tr>
+                        <th>Đơn giá:</th>
+                        <td><input id="dg" required pattern="\d" type="number" name="dg"
+                            placeholder="là số, đơn vị VNĐ"></td>
+                    </tr>
+                    <tr>
+                        <th>Hình ảnh:</th>
+                        <td><input id="ha" required type="file" name="ha"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                            <td>
+                            <button  id="btn" type="submit"><img width="30px"  src="image/add.jfif"></button>
+                            <button onclick="resetinput1()" type="reset"><img width="30px"  src="image/clear.jfif"></button>
+                        </td>
+                    </tr>    
+                </table>
+            </div>
+            <div class="frm2">
+                <div class="title2">Cập nhật Sản Phẩm</div>
+                <table id="t3" width="100%">
+                    <tr>
+                        <th>Mã Sản phẩm:</th>
+                        <td><input id="masp2" required maxlength="5" type="text" name="masp"
+                            placeholder="5 ký tự"></td>
+                    </tr>
+                    <tr>
+                        <th>Tên Sản phẩm:</th>
+                        <td><input id="tensp2" required type="text" name="tensp"
+                            placeholder="không rỗng"></td>
+                    </tr>
+                    <tr>
+                        <th>Loại Sản phẩm:</th>
+                        <td>
+                            <select id="loaisp2" required>
+                                <option value="">--chọn--</option>
+                                <option value="Quần">Quần</option>
+                                <option value="Áo">Áo</option>
+                                <option value="Phụ Kiện">Phụ kiện</option>
+                                <option value="Giày">Giày</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Số lượng:</th>
+                        <td><input id="sl2" required pattern="\d" type="number" name="sl"
+                            placeholder="là số dương"></td>
+                    </tr>
+                    <tr>
+                        <th>Đơn giá:</th>
+                        <td><input id="dg2" required pattern="\d" type="number" name="dg"
+                            placeholder="là số, đơn vị VNĐ"></td>
+                    </tr>
+                    <tr>
+                        <th>Hình ảnh:</th>
+                        <td><input id="ha2" required type="file" name="ha"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                            <td>
+                            <input id="index" type="hidden">
+                            <button onclick="changeproduct()" id="btn2" type="submit"><img width="30px"  src="image/add.jfif"></button>
+                            <button onclick="resetinput2()" type="reset"><img width="30px"  src="image/clear.jfif"></button>
+                        </td>
+                    </tr>    
+                </table>
+            </div>
+
+        </div>
+    </div>
+<script src="js/admin_script.js"></script>
+ <script >
+    $(document).ready(function(){
+        // sự kiện click add
+        $( "#link-add" ).on( "click", function() {
+          $( ".frm1" ).show( );
+          $( ".frm2" ).hide( );
+        });        
+    });
+ </script>
+</body>

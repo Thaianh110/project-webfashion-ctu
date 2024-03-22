@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="Boostrap5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Sản Phẩm</title>
+  <link rel="shortcut icon" href="./image/logoCTU.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- phần đầu trang -->
+  <section class="fixed-top">
+    <header>
+      <section id="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 py-2"> <img class="logo-img" src="image/logoCTU.png" alt=""></div>
+            <div id="tkbox" class="col-md-6 py-2 ">
+              <form class="d-flex" role="search">
+                <input id="timkiem" class="form-control me-2 w-75" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <div class="kqtk hide">
+                <button onclick="dong()" type="button"></button>
+                <h3>Kết quả tìm kiếm</h3>
+                <div class="allsp-box">
+                  <!--sp1-->
+                  <a href="chitiet1.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/aothunicondenim.jpg" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Áo Thun Shades Of Cat</div>
+                        <div class="sp-price">250,000đ</div>
+                      </div>
+                    </div>
+                  </a>
+                  <!--sp2-->
+                  <a href="chitiet2.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Áo Thun Washed Form Regular</div>
+                        <div class="sp-price">250,000đ</div>
+                      </div>
+                    </div>
+                  </a>
+                  <!--sp3-->
+                  <a href="chitiet3.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/Áo Hoodie ICONDENIM Bear Printed.webp" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Áo Hoodie ICONDENIM Bear Printed</div>
+                        <div class="sp-price">450,000đ</div>
+                      </div>
+                    </div>
+                  </a>
+                  <!--sp4-->
+                  <a href="chitiet1.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/Áo Sơmi ICONDENIM Slim Fit.webp" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Áo Sơmi Slim Fit</div>
+                        <div class="sp-price">350,000đ</div>
+                      </div>
+                    </div>
+                  </a>
+                  <!--sp5-->
+                  <a href="sanpham.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/Áo Khoác ICONDENIM Air Spirit.webp" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Áo Khoác Air Spirit</div>
+                        <div class="sp-price">500,000</div>
+                      </div>
+                    </div>
+                  </a>
+                  <!--sp6-->
+                  <a href="sanpham.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/Quần Jogger Kaki ICONDENIM Logo Embroider.webp" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Quần Jogger Kaki Logo Embroider</div>
+                        <div class="sp-price">300,000đ</div>
+                      </div>
+                    </div>
+                  </a>
+                  <!--sp7-->
+                  <a href="sanpham.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/Quần Jeans ICONDENIM Skinny Blue Wash.webp" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Quần Jeans ICONDENIM Skinny Blue Wash</div>
+                        <div class="sp-price">400,000đ</div>
+                      </div>
+                    </div>
+                  </a>
+                  <!--sp8-->
+                  <a href="sanpham.html">
+                    <div class="sp-box">
+
+                      <img src="image/sanpham/Áo Sweatshirt ICONDENIM Optimistic Printed.webp" alt="">
+                      <div class="sp-info">
+                        <div class="sp-name">Áo Sweatshirt Optimistic Printed</div>
+                        <div class="sp-price">450,000đ</div>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 " id="a">
+
+              <div class="py-2">
+                <i class="fa-solid fa-user text-white"></i>
+                <a href="dangnhap.html"> Login</a>
+              </div>
+
+            </div>
+            <div class="col-md-2">
+
+              <div class="py-2">
+                <i class="fa-solid fa-cart-shopping text-white"></i>
+                <a href="giohang.html">Giỏ hàng</a>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </section>
+    </header>
+
+    <section class="menu">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="index.html"><img src="image/logo160.webp" width="160px" alt=""></a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"> TRANG CHỦ</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="sanpham.html"> GIỚI THIỆU</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="sanpham.html"> SẢN PHẨM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sale.html"> SALE</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </section>
+
+  </section>
+  <main>
+    <section id="collection-template">
+      <div class="collection-body">
+        <div class="container">
+          <div class="container2">
+            <img class="pt-5" src="image/sp1.webp" alt="" srcset="">
+            <div class="collection-top-bar">
+              <div class="collection-tittle">
+                <h1 class="pt-3">Tất cả sản phẩm</h1>
+              </div>
+            </div>
+            <div class="content-product-list product-list filter d-flex row-left-list">
+              <!--sp1-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="10" data-product-name="Áo Thun Shades Of Cat"
+                  data-product-price="250000" data-product-img="image/sanpham/aothunicondenim.jpg">
+                  <a href="chitiet1.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/aothunicondenim.jpg">
+                      <img class="hinh2" src="image/sanpham/Áo Thun ICONDENIM Shades Of Cat 2.webp">
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+
+                  </a>
+                  <!-- gọi hàm thêm vô giỏ hàng ở đây-->
+
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Thun Shades Of Cat</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>250,000đ</span>
+                      </p>
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+              </div>
+              <!--sp2-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="11"
+                  data-product-name="Áo Thun Premium Cotton Wash Embroider" data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun Premium Cotton Wash ICONDENIM Embroider.jpg">
+                  <a href="chitiet2.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Thun Premium Cotton Wash ICONDENIM Embroider.jpg">
+                      <img class="hinh2" src="image/sanpham/Áo Thun Premium Cotton Wash ICONDENIM Embroider.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Thun Premium Cotton Wash Embroider</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>250,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp3-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="12" data-product-name="Áo Thun Baseball - Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun ICONDENIM Baseball - Regular.webp">
+                  <a href="chitiet3.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Thun ICONDENIM Baseball - Regular.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Thun ICONDENIM Baseball - Regular 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Thun Baseball - Regular</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>250,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp4-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="13" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp">
+                  <a href="chitiet4.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Thun ICONDENIM Washed Form Regular 2.webp">
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Thun Washed Form Regular</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>250,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp5-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="14" data-product-name="Áo thun PRENIUM"
+                  data-product-price="250000" data-product-img="image/sanpham/Áo Thun ICONDENIM Smoke Printed DTG.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Thun ICONDENIM Smoke Printed DTG.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Thun ICONDENIM Smoke Printed DTG 2.webp">
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Thun Smoke Printed DTG</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>250,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp6-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="15" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Thun ICONDENIM Teddy Bear Team.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Thun ICONDENIM Teddy Bear Team 2.jpg">
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Thun Teddy Bear Team</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>250,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp7-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="16" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Hoodie ICONDENIM Bear Printed.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Hoodie ICONDENIM Bear Printed 2.webp">
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Hoodie Bear Printed</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>450,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp8-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="17" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Hoodie ICONDENIM Don't Trust Anyone.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Hoodie ICONDENIM Don't Trust Anyone 2.webp">
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html">Áo Hoodie Don't Trust Anyone</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>450,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp9-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="18" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Sweatshirt ICONDENIM Optimistic Printed.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Sweatshirt ICONDENIM Optimistic Printed 2.jpg">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Sweatshirt Optimistic Printed</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>450,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp10-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="19" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Áo Thun ICONDENIM Washed Form Regular.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1"
+                        src="image/sanpham/Áo Khoác Bomber Leather ICONDENIM The Strong Are The Winners.webp">
+                      <img class="hinh2"
+                        src="image/sanpham/Áo Khoác Bomber Leather ICONDENIM The Strong Are The Winners 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Khoác Bomber Leather The Strong Are The Winners</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>500,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp11-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="20" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000" data-product-img="image/sanpham/Áo Khoác ICONDENIM Air Spirit.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Khoác ICONDENIM Air Spirit.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Khoác ICONDENIM Air Spirit 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Khoác Air Spirit</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>500,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp12-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="21" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000" data-product-img="image/sanpham/Áo Sơmi ICONDENIM Slim Fit.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Áo Sơmi ICONDENIM Slim Fit.webp">
+                      <img class="hinh2" src="image/sanpham/Áo Sơmi ICONDENIM Slim Fit 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Áo Sơmi Slim Fit</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>350,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp13-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="22" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Quần Jeans ICONDENIM Black W Detail Form Slim.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Quần Jeans ICONDENIM Black W Detail Form Slim.webp">
+                      <img class="hinh2" src="image/sanpham/Quần Jeans ICONDENIM Black W Detail Form Slim 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Quần Jeans Black W Detail Form Slim</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>400,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp14-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="23" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Quần Jeans ICONDENIM Skinny Blue Wash.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Quần Jeans ICONDENIM Skinny Blue Wash.webp">
+                      <img class="hinh2" src="image/sanpham/Quần Jeans ICONDENIM Skinny Blue Wash 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Quần Jeans Skinny Blue Wash</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>400,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp15-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="24" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Quần Smart Jeans ICONDENIM Light Blue Smart Fit.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Quần Smart Jeans ICONDENIM Light Blue Smart Fit.webp">
+                      <img class="hinh2" src="image/sanpham/Quần Smart Jeans ICONDENIM Light Blue Smart Fit 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Quần Smart Jeans Light Blue Smart Fit</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>400,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp16-->
+              <div class="khung">
+                <div class="product-block card" data-product-id="25" data-product-name="Áo Thun Washed Form Regular"
+                  data-product-price="250000"
+                  data-product-img="image/sanpham/Quần Jogger Kaki ICONDENIM Logo Embroider.webp">
+                  <a href="chitiet.html">
+                    <div class="hinhsp">
+                      <img class="hinh1" src="image/sanpham/Quần Jogger Kaki ICONDENIM Logo Embroider.webp">
+                      <img class="hinh2" src="image/sanpham/Quần Jogger Kaki ICONDENIM Logo Embroider 2.webp">
+
+                    </div>
+                    <div class="box-iconsearch">
+                      <img class="iconsearch" src="image/sanpham/iconsearch.png">
+                    </div>
+                  </a>
+                  <!-- Them vao gio hang -->
+                  <button class="shopping btn-pd"><i class="fa-solid fa-cart-shopping pt-2"></i>
+                    <p class="text-sp text-sp1">Thêm vào giỏ hàng</p>
+                  </button>
+
+                  <div class="ttsp">
+                    <h3 class="tensp">
+                      <a href="chitiet.html"> Quần Jogger Kaki Logo Embroider</a>
+                    </h3>
+                    <div class="khungsp">
+                      <p class="gia">
+                        <span>300,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sp17-->
+              <!--sp18-->
+              <!--sp3-->
+              <!--sp3-->
+              <!--sp3-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chuyentrang pb-4">
+        <a href="sanpham.html">1</a>
+        <a href="sanpham1.html">2</a>
+        <a href="sanpham.html"> <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <section class="footer">
+      <div class="end">
+        <a href="#top"><i class="fa-solid fa-chevron-up" id="footer-header"></i></a>
+      </div>
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Thông tin về chúng tôi</h2> <br>
+            <table class="footer-one">
+              <tr>
+                <th><i class="fa-solid fa-location-dot"></i></th>
+                <td> 123 Ninh Kieu Can Tho </td>
+              </tr>
+              <tr>
+                <th> <i class="fa-solid fa-envelope"></i> </th>
+                <td> nhatt.store@gmail.com </td>
+              </tr>
+              <tr>
+                <th> <i class="fa-solid fa-phone"></i></th>
+                <td> 028 7100 6789 </td>
+              </tr>
+
+
+
+            </table>
+          </div>
+          <div class="col-md-8">
+            <div class="row" id="footer-two">
+              <div class="col">
+                <h3>Tài khoản</h3>
+                <table>
+                  <tr>
+                    <td> <a href="index.html">Trang chủ</a></td>
+
+                  </tr>
+                  <tr>
+                    <td> <a href="gioithieu.html">Giới thiệu</a></td>
+                  </tr>
+                  <tr>
+                    <td> <a href="sanpham.html">Sản phẩm</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="tintuc.html">Tin tức</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="lienhe.html">Liên hệ</a></td>
+
+                  </tr>
+                </table>
+              </div>
+              <div class="col">
+                <h3>Chính sách</h3>
+                <table>
+                  <tr>
+                    <td> <a href="index.html">Trang chủ</a></td>
+
+                  </tr>
+                  <tr>
+                    <td> <a href="gioithieu.html">Giới thiệu</a></td>
+                  </tr>
+                  <tr>
+                    <td> <a href="sanpham.html">Sản phẩm</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="tintuc.html">Tin tức</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="lienhe.html">Liên hệ</a></td>
+
+                  </tr>
+                </table>
+              </div>
+              <div class="col">
+                <h3>Điều khoản</h3>
+                <table>
+                  <tr>
+                    <td> <a href="index.html">Trang chủ</a></td>
+
+                  </tr>
+                  <tr>
+                    <td> <a href="gioithieu.html">Giới thiệu</a></td>
+                  </tr>
+                  <tr>
+                    <td> <a href="sanpham.html">Sản phẩm</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="tintuc.html">Tin tức</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="lienhe.html">Liên hệ</a></td>
+
+                  </tr>
+                </table>
+              </div>
+              <div class="col">
+                <h3>Hướng dẫn</h3>
+                <table>
+                  <tr>
+                    <td> <a href="index.html">Trang chủ</a></td>
+
+                  </tr>
+                  <tr>
+                    <td> <a href="gioithieu.html">Giới thiệu</a></td>
+                  </tr>
+                  <tr>
+                    <td> <a href="sanpham.html">Sản phẩm</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="tintuc.html">Tin tức</a></td>
+
+                  </tr>
+                  <tr>
+
+                    <td> <a href="lienhe.html">Liên hệ</a></td>
+
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+  </footer>
+  <script src="js/timkiem.js"></script>
+  <script src="./js/sanpham.js"></script>
+  <script src="Boostrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

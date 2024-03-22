@@ -1,0 +1,12 @@
+h2{
+ text-align: center;
+}
+#cartDetail{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20%;
+}
+#cartDetail thead th{
+ border: 1px;
+ padding: 0 30px;
+}
